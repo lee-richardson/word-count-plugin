@@ -1,10 +1,6 @@
-//let devs choose the reader speed
-//if they know the reading speed of their audience
+$.fn.readTimer = function() {
 
 var wordCountApp = {};
-
-
-
 wordCountApp.init = function() {
 	//This will return all the words and the length
 	//.text() will get the text in the selected container
@@ -33,3 +29,4 @@ wordCountApp.init = function() {
 $(function () {
 	wordCountApp.init();
 });
+}
