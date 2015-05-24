@@ -6,10 +6,10 @@ Designed for bloggers, writers, and anyone who hosts a lot of text-heavy article
 The plugin will feed a sentence into div called readTimeResult, which you can place anywhere on your page. In this example, I chose to put it under the byline.  
 <pre>
 <code>
-	<h1>Lorem ipsum dolor sit amet.</h1>
-	<h2>By Lorem ipsum dolor.</h2>
-	<div class="wordCount">	
-	<div class="readTimeResult"></div>
+	<p>Lorem ipsum dolor sit amet.</p>
+	<p>By Lorem ipsum dolor.</p>
+	<p><div class="wordCount"></p>	
+	<p><div class="readTimeResult"></div></p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab hic cupiditate ipsa excepturi esse sed pariatur sit recusandae autem molestias, perspiciatis natus perferendis optio qui, eos consequuntur commodi, cum soluta.</p>
 </code>	
 </pre>	
