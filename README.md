@@ -2,7 +2,8 @@
 
 A UX plugin that calculates how long any article will take to read, and presents a string telling the reader how long they should expect an article to read through.
 The readTimer plugin is designed for bloggers, writers, and anyone who hosts a lot of text-heavy articles on their site. 
- 
+
+<p><a href="http://leerichardson.io/word-count-plugin/">Demo</a></p>
 
 ##How to use 
 
