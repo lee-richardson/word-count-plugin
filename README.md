@@ -29,3 +29,7 @@ This is easy to do. In the wordCount variable:
 var wordCount = $('.wordCount').text().split(' ').length/300;
 
 simply change the number after 'length/'. For example, if you expect your audience to read slower than the average online reader, change the '300' to '400'. 
+
+<a href ="http://leerichardson.io"</a> made this
+
+<a href ="https://twitter.com/leerichardson"</a>@leerichardson
