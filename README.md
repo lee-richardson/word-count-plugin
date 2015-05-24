@@ -18,7 +18,7 @@ Wrap your text article in a div with the class of wordCount. This will produce a
 
 The resulting number is stored in a variable called wordCount, and then fed into the readTimeResult div as a whole number using Math.round.
 
-The resulting string will then be presented in your HTML as "This article will take [NUMBER OF MINUTES] to read." If the article will take less than a minute to read, "minutes" will be replaced by "seconds" in the presented sentence.
+The resulting string will then be presented in your HTML as, for example, "This article will take 5 minutes to read." If the article will take less than a minute to read, "minutes" will be replaced by "seconds" in the presented sentence.
 
 ##Options
 
