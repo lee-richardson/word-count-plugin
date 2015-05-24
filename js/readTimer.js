@@ -1,6 +1,6 @@
 $.fn.readTimer = function() {
 
-var wordCountApp = {};
+var readTimeApp = {};
 wordCountApp.init = function() {
 	//This will return all the words and the length
 	//.text() will get the text in the selected container
@@ -27,6 +27,6 @@ wordCountApp.init = function() {
 
 
 $(function () {
-	wordCountApp.init();
+	readTimeApp.init();
 });
 }
