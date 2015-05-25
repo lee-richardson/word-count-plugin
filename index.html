@@ -7,9 +7,12 @@
 </head>
 <body>
  <div class="wrapper redText">
+ 	<div class="intro">
  		<img src="https://unsplash.it/g/1000/300?image=342" alt="">
-			<h1>Lorem ipsum dolor sit amet.</h1>
-			<h2>By Lorem ipsum dolor.</h2>
+			<h1>readTimer</h1>
+			<h2>By Lee Richardson</h2>
+			<h3>A simple way to show how long an article will take to read. Scroll to the end of the page to view the documentation.</h3>
+	</div>
 	<div class="wordCount">	
 		<div class="readTimeResult"></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab hic cupiditate ipsa excepturi esse sed pariatur sit recusandae autem molestias, perspiciatis natus perferendis optio qui, eos consequuntur commodi, cum soluta.</p>
@@ -52,6 +55,24 @@
 			<p>Veniam voluptates maiores, totam accusantium, eius doloremque, nesciunt iusto culpa cum est facilis sed minus officiis quae explicabo praesentium repellendus consequuntur corrupti placeat earum quibusdam quidem ab? Nisi, at, facilis.</p>
 			<p>Expedita assumenda hic repudiandae officia animi fugit consequuntur nemo quia nihil vitae iure vero dolor adipisci odio eaque nisi minima libero non, aspernatur odit. Quisquam laudantium expedita quis culpa, architecto.</p>
 			<p>Nulla, totam laborum consequatur asperiores architecto fuga autem dolore nam saepe consectetur iste fugiat aut maiores molestias reprehenderit, est illo ut error dolores ullam ea fugit quas quibusdam odit maxime.</p>
+	
+	<div class="documentation">
+		<h2>How to use</h2>
+		<p>1. Add the readTimer.js file into your site's root file, then call it with your HTML using a script tag.</p>
+		<p>2. In your HTML, add a div with the class of readTimeResult. This will hold the string:</p>
+		<pre>"This article will take " + Math.round(wordCount) + " minutes to read"</pre> 
+		<p>The readTimeResult div can be placed anywhere on your page, though I'd recommend adding it near the headline or byline, or immediately after the end of your article.</p>
+		<p>3. Wrap the article that you want to add the plugin to in a div with the class of wordCount. This will produce an array, counting the number of words within the div, then mutiply the number of words by the average adult's online reading speed of 300 words per minute.</p>
+		<p>4. The resulting number is stored in a variable called wordCount, and then fed into the readTimeResult div as a whole number using Math.round.</p>
+		<p>5. The resulting string will then be presented in your HTML as, for example, "This article will take 5 minutes to read." If the article will take less than a minute to read, "minutes" will be replaced by "seconds" in the presented sentence. E.G.: "This article will take 47 seconds to read."</p>
+
+		<h3>Options</h3>
+		<p>If your site caters to specific audiences who may not read at the average reading speed - E.G.: an older audience who are less adjusted to reading on the web, or a younger audience who may be learning to read - you might want to adjust the expected time it will take to read an article.</p>
+		<p>This is easy to do. In the wordCount variable:</p>
+		<pre>var wordCount = $('.wordCount').text().split(' ').length/300; </pre>
+		<p>simply change the number after 'length/'. For example, if you expect your audience to read slower than the average online reader, change the '300' to '400'.</p>
+		<a href="https://github.com/lee-richardson/word-count-plugin" class="redText">View on Github</a>
+	</div>
 	</div>
 </div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

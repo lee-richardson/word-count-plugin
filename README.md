@@ -11,7 +11,9 @@ Add the readTimer.js file into your site's root file, then call it with your HTM
 
 In your HTML, add a div with the class of readTimeResult. This will present the string 
 
+<pre>
 "This article will take " + Math.round(wordCount) + " minutes to read"
+</pre>
 
 into the readTimeResult div, which you can place anywhere on your page. I'd recommend adding it under the headline or immediately after the end of your article.
 
@@ -23,7 +25,7 @@ The resulting string will then be presented in your HTML as, for example, "This 
 
 ##Options
 
-If your site caters to specific auidiences: e.g.: an older audience who are less adjusted to reading on the web, or a younger audience who may be learning to read, you might want to adjust the expected time it will take to read an article. 
+If your site caters to specific audiences: e.g.: an older audience who are less adjusted to reading on the web, or a younger audience who may be learning to read, you might want to adjust the expected time it will take to read an article. 
 
 This is easy to do. In the wordCount variable:
 

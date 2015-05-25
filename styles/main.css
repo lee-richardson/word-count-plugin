@@ -21,6 +21,10 @@ p {
 	font-size: 18px;
 }
 
+a {
+	col
+}
+
 .wrapper {
 	width: 80%;
 	padding: 0 10%;
@@ -44,3 +48,10 @@ p {
 	width: 62%;*/
 }
 
+.intro {
+	padding-bottom: 50px;
+}
+
+.documentation {
+	padding: 50px 0;
+}
