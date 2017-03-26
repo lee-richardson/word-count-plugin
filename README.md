@@ -35,4 +35,4 @@ simply change the number after 'length/'. For example, if you expect your audien
 
 <p><a href ="http://leerichardson.io">Lee Richardson</a> made this</p>
 
-<a href ="https://twitter.com/leerichardson">Twitter: @leerichardson</a>
+<p>Twitter: <a href ="https://twitter.com/leerichardson">@leerichardson</a></p>
