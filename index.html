@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Word count</title>
 	<link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
  <div class="wrapper redText">
@@ -58,13 +59,13 @@
 	
 	<div class="documentation">
 		<h2>How to use</h2>
-		<p>1. Add the readTimer.js file into your site's root file, then call it with your HTML using a script tag.</p>
-		<p>2. In your HTML, add a div with the class of readTimeResult. This will hold the string:</p>
+		<p><span class="number">1.</span>  Add the readTimer.js file into your site's root file, then call it with your HTML using a script tag.</p>
+		<p><span class="number">2.</span> In your HTML, add a div with the class of readTimeResult. This will hold the string:</p>
 		<pre>"This article will take " + Math.round(wordCount) + " minutes to read"</pre> 
 		<p>The readTimeResult div can be placed anywhere on your page, though I'd recommend adding it near the headline or byline, or immediately after the end of your article.</p>
-		<p>3. Wrap the article that you want to add the plugin to in a div with the class of wordCount. This will produce an array, counting the number of words within the div, then mutiply the number of words by the average adult's online reading speed of 300 words per minute.</p>
-		<p>4. The resulting number is stored in a variable called wordCount, and then fed into the readTimeResult div as a whole number using Math.round.</p>
-		<p>5. The resulting string will then be presented in your HTML as, for example, "This article will take 5 minutes to read." If the article will take less than a minute to read, "minutes" will be replaced by "seconds" in the presented sentence. E.G.: "This article will take 47 seconds to read."</p>
+		<p><span class="number">3.</span> Wrap the article that you want to add the plugin to in a div with the class of wordCount. This will produce an array, counting the number of words within the div, then mutiply the number of words by the average adult's online reading speed of 300 words per minute.</p>
+		<p><span class="number">4.</span> The resulting number is stored in a variable called wordCount, and then fed into the readTimeResult div as a whole number using Math.round.</p>
+		<p><span class="number">5.</span> The resulting string will then be presented in your HTML as, for example, "This article will take 5 minutes to read." If the article will take less than a minute to read, "minutes" will be replaced by "seconds" in the presented sentence. E.G.: "This article will take 47 seconds to read."</p>
 
 		<h3>Options</h3>
 		<p>If your site caters to specific audiences who may not read at the average reading speed - E.G.: an older audience who are less adjusted to reading on the web, or a younger audience who may be learning to read - you might want to adjust the expected time it will take to read an article.</p>

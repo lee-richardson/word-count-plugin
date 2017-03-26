@@ -19,34 +19,35 @@ h2 {
 
 p {
 	font-size: 18px;
-}
-
-a {
-	col
+	width: 75%;
 }
 
 .wrapper {
-	width: 80%;
-	padding: 0 10%;
+	width: auto;
+	padding: 0 10% 0 10%;
 }
 
 .redText {
 	 color: #f7403a;
 }
 
+img {
+	width: 100%;
+}
+
 .readTimeResult {
 	/*text-decoration: underline;*/
 	font-size: 20px;
-	transition: 1s;
+	font-weight: bold;
 }
 
-.readTimeResult:hover {
+/*.readTimeResult:hover {
 	font-size: 28px;
-	transition: 1s;
+	transition: 1s;*/
 	/*border: 1px black solid;
 	padding: 5px;
 	width: 62%;*/
-}
+/*}*/
 
 .intro {
 	padding-bottom: 50px;
@@ -55,3 +56,52 @@ a {
 .documentation {
 	padding: 50px 0;
 }
+
+.number {
+	font-weight: bold;
+}
+
+@media (max-width: 1025px) {
+
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 36px;
+	}
+
+	.readTimeResult {
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 30px;
+	}
+
+	pre {
+		font-size: 30px;
+	}
+
+	a {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.wrapper {
+		padding: 0 15% 0 5%;
+	}
+
+	p {
+		font-size: 24px;
+	}
+}
+
+
+
